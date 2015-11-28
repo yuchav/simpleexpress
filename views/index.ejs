@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title><%= title %></title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/navbar-static-top.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
   </head>
   <body>
       <% include header %>
+      <% if (locals.username) { %>
+        <i>欢迎你,<%= username %>,这里是首页的内容区域,只有登录的用户才能够看到.</i>
+      <% } %>
   </body>
 </html>

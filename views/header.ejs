@@ -1,18 +1,19 @@
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">Porschev - Nodejs + Express + Ejs + MySQL + Bootstrap 示例</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
+<h2><%= title %></h2>
 
-        <% if (locals.username) { %>
-          <li><a href="#">
-                <%= username %>
-          </a></li>
-          <li><a href="/logout">安全退出</a></li>
-        <% } %>
-      </ul>
-    </div>
-  </div>
-</div>
+<hr>
+
+<% if (locals.username) { %>
+  <span>
+        欢迎,<%= username %>
+  </span>
+  <a href="/">首页</a>
+  <a href="/reg">注册</a>
+  <a href="/login">登录</a>
+  <a href="/logout">登出</a>
+<% } else { %>
+  未登录哦
+<% } %>
+
+<hr>
+
+
