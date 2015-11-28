@@ -17,3 +17,5 @@
 ##version 1.0
 1. 实现首页,注册,登录,登出
 2. 使用池实现user表的增查方法
+
+##### yuchav@foxmail.com
