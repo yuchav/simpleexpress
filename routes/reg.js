@@ -22,8 +22,8 @@ router.get('/', function(req, res) {
         console.log('session:' + req.session.username);
         res.locals.username = req.session.username;
     } else {
-        res.redirect('/login');
-        return;
+        //res.redirect('/login');
+        //return;
     }
 
     //request请求此目录,传入title

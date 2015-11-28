@@ -1,10 +1,10 @@
 var mysql = require('mysql');
-var DB_NAME = 'nodesample';
+var DB_NAME = 'simpleexpress';
 
 var pool = mysql.createPool({
     host: '127.0.0.1',
     user: 'root',
-    password: 'Yuxiao123!'
+    password: ''
 });
 
 pool.on('connection', function(connection) {
